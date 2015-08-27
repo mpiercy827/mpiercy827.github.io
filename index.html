@@ -3,18 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" href="./style/snake.css">
   </head>
   <body>
-    <script src="./jquery-2.1.4.js"></script>
-    <script type="text/javascript" src="./snake.js"></script>
-    <script type="text/javascript" src="./snake-view.js"></script>
+    <script src="./js/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="./js/snake.js"></script>
+    <script type="text/javascript" src="./js/board.js"></script>
+    <script type="text/javascript" src="./js/util.js"></script>
+    <script type="text/javascript" src="./js/items.js"></script>
+    <script type="text/javascript" src="./js/snake-view.js"></script>
     <h1 class="title">Snake</h1>
-    <section class="game-container">
+    <section class="container">
+      <div class="game-container">
+      </div>
+      <div class="score-container">
+        Score:
+        <div class="score">
+        </div>
+      </div>
     </section>
-    <section class="instructions">
-      Use W, A, S, D to move Up, Left, Down and Right.
-    </section>
+
     <script>
       var view = new Snake.View($(".game-container"));
     </script>
