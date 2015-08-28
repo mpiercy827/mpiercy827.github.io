@@ -3,15 +3,9 @@
     Snake = window.Snake = {};
   }
 
-  Apple = Snake.Apple = function(pos) {
-    this.pos = pos;
+  var Apple = Snake.Apple = function (options) {
+    this.vector = new Vector(options.pos);
+    this.pos = this.vector.pos;
+    this.type = options.type;
   };
-
-  GoldenApple = Snake.GoldenApple = function(pos) {
-    this.pos = pos;
-  }
-
-  PoisonApple = Snake.PoisonApple = function(pos) {
-    this.pos = pos;
-  }
 })();

@@ -50,16 +50,19 @@
       pos = Vector.randomPos(this.cols, this.rows);
     } while (this.occupied(pos));
 
+    var apple = new Snake.Apple({pos: pos, type: type});
+
     if (!type) {
-      apple = new Apple(pos);
+      this.apples.push(apple);
     } else if (type === "poison") {
-      apple = new PoisonApple(pos);
+      this.poisonApples.push(apple);
     } else if (type === "golden") {
-      apple = new GoldenApple(pos);
+      this.goldenApples.push(apple);
     }
+  };
 
-
-    this.apples.push(apple);
+  Board.prototype.allApples = function () {
+    return this.apples.concat(this.goldenApples.concat(this.poisonApples));
   };
 
   Board.prototype.occupied = function (position) {
@@ -73,10 +76,28 @@
     return occupied;
   };
 
-  Board.prototype.convertApple = function () {
+  Board.prototype.removeApple = function (apple) {
+    var collection;
+
+    if (!apple.type) {
+      collection = this.apples;
+    } else if (apple.type === "golden") {
+      collection = this.goldenApples;
+    } else if (apple.type === "poison") {
+      collection = this.poisonApples;
+    }
+
+    var index = collection.indexOf(apple);
+    collection.splice(index, 1);
+  };
+
+  Board.prototype.digestApple = function (apple) {
     this.snake.addSegment = true;
-    this.apples.pop();
+    this.removeApple(apple);
     this.addApple();
   };
 
+  Board.prototype.gameOver = function () {
+    return this.snakeOut() || this.snake.selfCollision();
+  };
 })();
