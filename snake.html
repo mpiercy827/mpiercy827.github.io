@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/snake.css">
+  </head>
+  <body>
+    <script src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/snake/util.js"></script>
+    <script type="text/javascript" src="./js/snake/items.js"></script>
+    <script type="text/javascript" src="./js/snake/snake.js"></script>
+    <script type="text/javascript" src="./js/snake/board.js"></script>
+    <script type="text/javascript" src="./js/snake/snake-view.js"></script>
+
+    <div id="content">
+      <section class="container">
+        <div class="header">
+          Snake
+          <div class="score-container">
+            Score:<div class="score"></div>
+          </div>
+          <div class="high-score-container">
+            High Score:<div class="high-score"></div>
+          </div>
+        </div>
+        <div class="game-container"></div>
+        <div class="instructions-container">
+          Instructions:
+          <div class="instructions">
+            W, A, S, D or &#x2190; &#x2191; &#x2192; &#x2193; for movement.
+            <br>
+            <br>
+            <div class="sample-snake"></div> You, the snake.
+            <br>
+            <br>
+            <div class="sample-apple"></div> Eat to grow and increase score 1.
+            <br>
+            <br>
+            <div class="sample-golden-apple"></div> Eat to increase score 5. These disappear quickly.
+            <br>
+            <br>
+            <div class="sample-poison-apple"></div> Avoid these. Eating will reverse controls temporarily.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      var view = new Snake.View($(".game-container"));
+    </script>
+
+
+  </body>
+</html>
