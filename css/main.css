@@ -116,6 +116,20 @@ section.about-me {
   background: #dcd0c0;
 }
 
+section.about-me a {
+  outline: 0;
+  color: #373737;
+  text-decoration: underline;
+}
+
+section.resume a:hover,
+section.resume a:focus,
+section.resume a:active,
+section.resume a.active {
+  outline: 0;
+  color: #f4f4f4;
+}
+
 section.resume {
   background: #f4f4f4;
 }
