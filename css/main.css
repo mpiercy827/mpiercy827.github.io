@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
   outline: 0;
-  color: #c0b283;
+  color: #88BBD6;
 }
 
 h1,
@@ -75,7 +75,7 @@ header img {
 }
 
 header .intro-text .name {
-  color: #c0b283;
+  color: #88BBD6;
   display: block;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -113,7 +113,7 @@ section h2 {
 }
 
 section.about-me {
-  background: #dcd0c0;
+  background: #88BBD6;
 }
 
 section.about-me a {
@@ -185,7 +185,7 @@ footer h3 {
 
 footer .footer-above {
   padding-top: 50px;
-  background: #c0b283;
+  background: #99D3DF;
 }
 
 footer .footer-col {
