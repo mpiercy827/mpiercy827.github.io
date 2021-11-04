@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
   outline: 0;
-  color: #800000;
+  color: #34D18D;
 }
 
 h1,
@@ -46,12 +46,12 @@ hr.star-light {
 }
 
 hr.star-light {
-  border-color: #373737;
+  border-color: #333333;
 }
 
 hr.star-light:after {
-  color: #373737;
-  background-color: #373737;
+  color: #333333;
+  background-color: #333333;
 }
 
 .img-centered {
@@ -60,8 +60,8 @@ hr.star-light:after {
 
 header {
   text-align: center;
-  color: #373737;
-  background: #f4f4f4;
+  color: #333333;
+  background: #ffffff;
 }
 
 header .container {
@@ -75,7 +75,7 @@ header img {
 }
 
 header .intro-text .name {
-  color: #800000;
+  color: #34D18D;
   display: block;
   text-transform: uppercase;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -124,10 +124,10 @@ section h2 {
 
 .btn-outline {
   margin-top: 15px;
-  border: solid 2px #373737;
+  border: solid 2px #333333;
   font-size: 20px;
-  color: #f4f4f4;
-  background: #373737;
+  color: #ffffff;
+  background: #333333;
   transition: all .3s ease-in-out;
 }
 
@@ -135,13 +135,13 @@ section h2 {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  border: solid 2px #373737;
-  background: #f4f4f4;
-  color: #373737;
+  border: solid 2px #333333;
+  background: #ffffff;
+  color: #333333;
 }
 
 footer {
-  color: #373737;
+  color: #333333;
 }
 
 footer h3 {
@@ -150,7 +150,7 @@ footer h3 {
 
 footer .footer-above {
   padding-top: 50px;
-  background: #800000;
+  background: #34D18D;
 }
 
 footer .footer-col {
@@ -159,14 +159,14 @@ footer .footer-col {
 
 footer .footer-below {
   padding: 25px 0;
-  background: #f4f4f4;
+  background: #ffffff;
 }
 
 .btn-social {
   display: inline-block;
   width: 50px;
   height: 50px;
-  border: 2px solid #f4f4f4;
+  border: 2px solid #ffffff;
   border-radius: 100%;
   text-align: center;
   font-size: 20px;
