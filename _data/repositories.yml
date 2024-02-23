@@ -1,12 +1,6 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - mpiercy827
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - mpiercy827/downstream
+  - mpiercy827/ex_metrics
