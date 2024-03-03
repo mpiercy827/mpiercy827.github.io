@@ -123,8 +123,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: matt writes stuff # blog_name will be displayed in your blog page
-blog_description: things that matt writes
+blog_name: things that interest me. # blog_name will be displayed in your blog page
+blog_description: could be math. could be science. could be a calculation of how many calories Santa ingests on Christmas eve.
 permalink: /blog
 
 # Pagination
